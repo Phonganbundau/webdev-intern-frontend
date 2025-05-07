@@ -10,7 +10,7 @@ const Top10KhoiA = () => {
     useEffect(() => {
         const fetchTopScores = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/diem-thi/top10-khoi-a');
+                const response = await axios.get('https://webdev-intern-backend-production.up.railway.app/api/diem-thi/top10-khoi-a');
                 setTopScores(response.data);
                 setError('');
             } catch (err) {

@@ -21,7 +21,7 @@ const ScoreDistributionChart = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/diem-thi/thong-ke');
+                const response = await axios.get('https://webdev-intern-backend-production.up.railway.app/api/diem-thi/thong-ke');
                 setData(response.data);
                 setError('');
             } catch (err) {

@@ -12,7 +12,7 @@ const SearchScore = () => {
     // Hàm gọi API khi submit form
     const fetchScores = useCallback(async (sbdValue) => {
         try {
-            const response = await axios.get(`http://localhost:8000/api/diem-thi/tra-cuu/${sbdValue}`);
+            const response = await axios.get(`https://webdev-intern-backend-production.up.railway.app/api/diem-thi/tra-cuu/${sbdValue}`);
             setScores(response.data);
             setError('');
         } catch (err) {
